@@ -9,7 +9,7 @@
   "addLabels": ["dependencies"],
   "packageRules": [
     {
-      "description": "Treat Alipne docker tag as SemVer version",
+      "description": "Treat Alpine docker tag as SemVer version",
       "matchDatasources": ["docker"],
       "matchPackageNames": ["docker.io/alpine"],
       "versioning": "semver"
