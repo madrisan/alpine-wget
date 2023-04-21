@@ -25,14 +25,14 @@ This container image is hosted on multiple registries for your convenience.
 .link:https://hub.docker.com/r/madrisan/alpine-wget[DockerHub]
 [source,Dockerfile]
 ----
-FROM docker.io/madrisan/alpine-wget:3.15
+FROM docker.io/madrisan/alpine-wget:3.17
 # ...
 ----
 
 .link:https://github.com/users/madrisan/packages/container/package/alpine-wget[GitHub Registry]
 [source,Dockerfile]
 ----
-FROM ghcr.io/madrisan/alpine-wget:3.15
+FROM ghcr.io/madrisan/alpine-wget:3.17
 # ...
 ----
 
