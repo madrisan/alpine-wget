@@ -29,13 +29,6 @@ FROM docker.io/k3rnelpan1c/alpine-wget:3.15
 # ...
 ----
 
-.link:https://quay.io/repository/k3rnel-pan1c/alpine-wget[Quay]
-[source,Dockerfile]
-----
-FROM quay.io/k3rnel-pan1c/alpine-wget:3.15
-# ...
-----
-
 .link:https://github.com/users/k3rnelpan1c-dev/packages/container/package/alpine-wget[GitHub Registry]
 [source,Dockerfile]
 ----
