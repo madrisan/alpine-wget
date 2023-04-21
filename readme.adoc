@@ -4,19 +4,8 @@
 :toc-title:
 
 image:https://img.shields.io/github/license/k3rnelpan1c-dev/alpine-wget.svg?style=flat-square[GPLv3 Licence,link="https://opensource.org/licenses/GPL-3.0"]
-image:https://img.shields.io/maintenance/yes/2022?style=flat-square[This repo is maintained]
+image:https://img.shields.io/maintenance/yes/2023?style=flat-square[This repo is maintained]
 image:https://img.shields.io/github/contributors/k3rnelpan1c-dev/alpine-wget.svg?color=blue&style=flat-square[link="https://github.com/k3rnelpan1c-dev/alpine-wget/graphs/contributors"]
-
-[WARNING]
-====
-I am planing to archive and retire this repository by the end of this year (2022).
-The reason behind this is the very moderate usefulness of this repository/container image.
-Please, if you use this image within your deployments anywhere, be sure to have migrated to either your own fork or to curl and the official `curlimages`.
-
-I will eventually remove all published container images after the March 2023, since I want to avoid being responsible for outdated vulnerable container images.
-
-Br, K3
-====
 
 == About
 
@@ -33,24 +22,17 @@ toc::[]
 
 This container image is hosted on multiple registries for your convenience.
 
-.link:https://hub.docker.com/r/k3rnelpan1c/alpine-wget[DockerHub]
+.link:https://hub.docker.com/r/madrisan/alpine-wget[DockerHub]
 [source,Dockerfile]
 ----
-FROM docker.io/k3rnelpan1c/alpine-wget:3.15
+FROM docker.io/madrisan/alpine-wget:3.15
 # ...
 ----
 
-.link:https://quay.io/repository/k3rnel-pan1c/alpine-wget[Quay]
+.link:https://github.com/users/madrisan/packages/container/package/alpine-wget[GitHub Registry]
 [source,Dockerfile]
 ----
-FROM quay.io/k3rnel-pan1c/alpine-wget:3.15
-# ...
-----
-
-.link:https://github.com/users/k3rnelpan1c-dev/packages/container/package/alpine-wget[GitHub Registry]
-[source,Dockerfile]
-----
-FROM ghcr.io/k3rnelpan1c-dev/alpine-wget:3.15
+FROM ghcr.io/madrisan/alpine-wget:3.15
 # ...
 ----
 
