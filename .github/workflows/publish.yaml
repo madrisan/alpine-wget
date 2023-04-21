@@ -49,7 +49,7 @@ jobs:
 
       - name: Build Image
         id: build-image
-        uses: redhat-actions/buildah-build@3e3409a0324de94ae9e740122c436c7967f474e2 # v2.11
+        uses: redhat-actions/buildah-build@v2.12
         with:
           image: alpine-wget
           tags: latest ${{ env.MAJOR }} ${{ env.MAJOR_MINOR }} ${{ env.SEMVER }} sha-${{ env.SHORT_SHA }}
@@ -59,7 +59,7 @@ jobs:
           containerfiles: ./Containerfile
 
       - name: Publish Image to ghcr.io
-        uses: redhat-actions/push-to-registry@f787883d70a3cc66d399816d0385ac4aec7079f9 # tag=v2.5.1
+        uses: redhat-actions/push-to-registry@v2.7
         continue-on-error: true
         with:
           image: ${{ steps.build-image.outputs.image }}
@@ -69,7 +69,7 @@ jobs:
           password: ${{ github.token }}
 
       - name: Publish Image to docker.io
-        uses: redhat-actions/push-to-registry@f787883d70a3cc66d399816d0385ac4aec7079f9 # tag=v2.5.1
+        uses: redhat-actions/push-to-registry@v2.7
         continue-on-error: true
         with:
           image: ${{ steps.build-image.outputs.image }}
